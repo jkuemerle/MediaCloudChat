@@ -9,6 +9,25 @@
 
     <h2>Media Cloud Support</h2>
 	<p>Chat with us!</p>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dfl000003H8aX',
+				'MediaCloud',
+				'https://securitytraining.my.site.com/ESWMediaCloud1760490449233',
+				{
+					scrt2URL: 'https://securitytraining.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://securitytraining.my.site.com/ESWMediaCloud1760490449233/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
